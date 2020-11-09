@@ -1,15 +1,22 @@
 @import "./utils/vareibles";
 @import "./utils/visually-hidden";
+@import "./utils/mixins";
+
 //
+
 @import "./base/common";
 @import "./base/conteiner";
+
 //
+
 @import "./components/selection-button";
 @import "./components/logo";
 @import "./components/navigation";
 @import "./components/address";
 @import "./components/subscribe-form";
 @import "./components/social";
+
 //
+
 @import "./layout/portfolio";
 @import "./layout/footer";

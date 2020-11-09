@@ -64,16 +64,10 @@
 .modal-form {
   display: flex;
   flex-direction: column;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: #757575;
 
   &-title {
     margin-bottom: 12px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
+    @include font(700, 20px, 23px);
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
@@ -81,9 +75,7 @@
 
   &-field {
     margin-bottom: 10px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.167;
+    @include font(400, 12px, 14px);
     letter-spacing: 0.01em;
     color: #757575;
   }
@@ -113,31 +105,6 @@
   }
 }
 
-// .modal-form-title {
-//   margin-bottom: 12px;
-//   font-weight: 700;
-//   font-size: 20px;
-//   line-height: 1.15;
-//   text-align: center;
-//   letter-spacing: 0.03em;
-//   color: #212121;
-// }
-
-// .modal-form-field {
-//   margin-bottom: 10px;
-//   font-weight: 400;
-//   font-size: 12px;
-//   line-height: 1.167;
-//   letter-spacing: 0.01em;
-//   color: #757575;
-// }
-
-// .modal-form-field-wrapper {
-//   display: block;
-//   position: relative;
-//   margin-top: 4px;
-// }
-
 .modal-form-btn {
   min-width: 200px;
   height: 50px;
@@ -149,18 +116,14 @@
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-style: 400;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
+  @include font(700, 16px, 30px);
   letter-spacing: 0.06em;
   color: #ffffff;
   cursor: pointer;
 }
 .modal-form-message::placeholder {
   font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
+  @include font(400, 14px, 16px);
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
@@ -176,37 +139,15 @@
   fill: #2196f3;
 }
 
-// .modal-form-input {
-//   display: block;
-//   width: 100%;
-//   height: 40px;
-//   border: 1px solid rgba(33, 33, 33, 0.2);
-//   border-radius: 4px;
-//   padding-left: 42px;
-// }
-
-// .modal-form-message {
-//   height: 120px;
-//   border: 1px solid rgba(33, 33, 33, 0.2);
-//   border-radius: 4px;
-//   resize: none;
-//   margin-bottom: 10px;
-//   padding: 12px 16px;
-// }
-
 .modal-form-field-message {
   margin-bottom: 4px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.167;
+  @include font(400, 12px, 14px);
   letter-spacing: 0.01em;
   color: #757575;
 }
 
 .modal-form-polisy-label {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714px;
+  @include font(400, 14px, 24px);
   letter-spacing: 0.03em;
   color: #757575;
   margin-top: 10px;

@@ -15,12 +15,10 @@
     border-radius: 50%;
     background-color: #ffffff;
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover {
-      background-color: $accent-color;
-    }
   }
-
+  &__link:hover {
+    background-color: $accent-color;
+  }
   &__svg {
     width: 20px;
     height: 20px;
@@ -46,9 +44,7 @@
 
   &__title {
     margin-bottom: 20px;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
+    @include font(700, 14px, 16px);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #ffffff;
